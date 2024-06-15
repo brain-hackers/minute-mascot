@@ -1,0 +1,165 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+   <meta name="GENERATOR" content="Mozilla/4.73 (Macintosh; U; PPC) [Netscape]">
+   <meta name="Content-Type" content="text/html; charset=Shift_JIS">
+   <title>ミニッツマスコット :  データ作成マニュアル</title>
+</head>
+<body text="#000000" bgcolor="#FFBF56" link="#0000FF" vlink="#551A8B" alink="#0000FF">
+&nbsp;
+<br><b><font size=+3>ミニッツマスコット　データ作成マニュアル</font></b>
+<p>
+<hr WIDTH="100%">
+<br>&nbsp;
+<h4>
+1. 作業の流れ</h4>
+
+<blockquote>ミニッツマスコットのスキンデータを作成するためには、以下の作業を行います。</blockquote>
+
+<ol>
+<ol>
+<li>
+画像データを作成</li>
+
+<li>
+skin.txtをテキストエディタで作成</li>
+
+<li>
+実機で確認</li>
+</ol>
+</ol>
+
+<h4>
+2. 画像データ</h4>
+
+<ol>画像データは、1,2,4,8,24 bit/pixel (1,4,16,256,24bitフルカラー色) の無圧縮BMP/2BPです。
+<br>画像サイズ分のメモリを使用しますので、不要な余白はなるべくないようするべきでしょう。</ol>
+
+<h4>
+3. skin.txtの書式</h4>
+
+<ol>skin.txtファイルは、画像ファイルや文字列、アニメーション表示時間などを記述したテキストファイルです。
+<br>シフトJISで記述します。
+<p>以下の順序で記述します。
+<br>&nbsp;
+<ol>
+<li>
+Dコマンドを記述します。これにより、アニメーション全体の大きさと初期表示位置の指定です。(skin.txtで1行のみ有効)\Tコマンドを記述します。複数のデータがある時の選択ダイアログでの、データの説明のための文字列の指定です。(skin.txtで1行のみ有効)</li>
+
+<li>
+Fコマンドを記述します。アニメーション中で文字列を表示する場合のフォントの指定です。(skin.txtで1行のみ有効)</li>
+
+<li>
+G, M, Sコマンドで、画像や文字列の記述をします。</li>
+
+<li>
+#コマンドでアニメーション系列を記述します。</li>
+
+<li>
+$コマンドでアニメーション系列の再生タイミングを指定します。</li>
+</ol>
+
+<p><br>アニメーション系列とは、一連のアニメーションパターンです。お辞儀や目パチのアニメーションなど、画像と再生時間の組み合わせからなるアニメーションのことです。早い話が、GIFアニメーションのようなものです。
+<p>画像、文字列、およびアニメーション系列の数に制限はありません。
+<p>$コマンドでは、アニメーション系列ごとに再生タイミングを指定します。
+<ul>
+<li>
+毎日0時から6時までは、居眠りのアニメーション系列を再生</li>
+
+<li>
+毎日3時に「おやつだよ！」というアニメーション系列を再生</li>
+
+<li>
+元旦に「あけましておめでとうございます」というアニメーション系列を再生</li>
+
+<li>
+毎日12時から16時までは、「こんばんは」というアニメーション系列を再生</li>
+</ul>
+などの動作が可能になります。</ol>
+
+<ol>&nbsp;
+<br>行頭文字が以下の文字の場合、コマンドの記述となります。
+<ol>&nbsp;
+<table>
+<tr>
+<td><a href="dat/d_command.html">Dコマンド</a></td>
+
+<td>:</td>
+
+<td>アニメーション全体の領域サイズ指定および初期座標指定</td>
+</tr>
+
+<tr>
+<td><a href="dat/t_command.html">Tコマンド</a></td>
+
+<td>:</td>
+
+<td>スキンファイル選択ダイアログでの文字列指定</td>
+</tr>
+
+<tr>
+<td><a href="dat/f_command.html">Fコマンド</a></td>
+
+<td>:</td>
+
+<td>文字列のフォント指定</td>
+</tr>
+
+<tr>
+<td><a href="dat/g_command.html">Gコマンド</a></td>
+
+<td>:</td>
+
+<td>画像ファイル指定</td>
+</tr>
+
+<tr>
+<td><a href="dat/m_command.html">Mコマンド</a></td>
+
+<td>:</td>
+
+<td>マスク画像ファイル指定</td>
+</tr>
+
+<tr>
+<td><a href="dat/s_command.html">Sコマンド</a></td>
+
+<td>:</td>
+
+<td>文字列指定</td>
+</tr>
+
+<tr>
+<td><a href="dat/sharp_command.html">#コマンド</a></td>
+
+<td>:</td>
+
+<td>アニメーション系列指定</td>
+</tr>
+
+<tr>
+<td><a href="dat/doller_command.html">$コマンド</a></td>
+
+<td>:</td>
+
+<td>アニメーション開始タイミング指定</td>
+</tr>
+</table>
+</ol>
+各コマンドは半角文字で記述します。大文字／小文字は区別しません。
+<br>行頭文字が上記以外の場合は無視されますので、コメント等に使用できます。</ol>
+
+<h4>
+4. 連絡先</h4>
+
+<blockquote>不明な点などがありましたら、uenoまで連絡して下さい。
+<br>WWW : <a href="http://users.goo.ne.jp/t-ueno/">UENO Tomohiro Homepage</a>
+<br>E-mail : <a href="mailto:t-ueno@mtc.biglobe.ne.jp">t-ueno@mtc.biglobe.ne.jp</a></blockquote>
+
+<hr WIDTH="100%">
+<div align=right>for ver 1.4
+<br>2001/05/21&nbsp; by&nbsp; ueno</div>
+
+</body>
+</html>
