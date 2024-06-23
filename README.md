@@ -6,7 +6,9 @@ Minute Mascot displays a mascot charactor on your Windows CE device. You can eas
 
 画面に、マスコットを表示します.......それだけです。データをユーザが作成することも可能です。
 
-Official Readme: [JA](readme.txt) / [EN](readme-e.txt)
+- Official Readme: [JA](readme.txt) / [EN](readme-e.txt)
+- [Official Website](http://www.tomozon.sakura.ne.jp/wince/)
+- [Documentation](https://brain-hackers.github.io/minute-mascot/)
 
 ## License
 
