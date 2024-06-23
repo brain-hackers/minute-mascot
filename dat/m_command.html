@@ -1,1 +1,76 @@
-<!doctype html public "-//w3c//dtd html 4.0 transitional//en"><html><head>   <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">   <meta name="Content-Type" content="text/html; charset=Shift_JIS">   <meta name="GENERATOR" content="Mozilla/4.73 (Macintosh; U; PPC) [Netscape]">   <title>�~�j�b�c�}�X�R�b�g :  M �R�}���h</title></head><body text="#000000" bgcolor="#FFBF56" link="#0000FF" vlink="#551A8B" alink="#0000FF"><b><i><font size=+3>M</font></i></b>�R�}���h<blockquote><font size=+1><u>����</u>�F�@<b><i>Mnum,filename,x_pos,y_pos[,transparent_palette]</i></b></font><blockquote>&nbsp;<table><tr><td>num</td><td>:</td><td>�}�X�N�摜�f�[�^�̔ԍ� (#�R�}���h�Ŏg�p)</td></tr><tr><td>filename</td><td>:</td><td>�}�X�N�摜�f�[�^�̃t�@�C����</td></tr><tr><td>x_pos</td><td>:</td><td>�A�j���[�V�����S�̗̂̈悩���X���W</td></tr><tr><td>y_pos</td><td>:</td><td>�A�j���[�V�����S�̗̂̈悩���Y���W</td></tr><tr><td>transparent_palette</td><td>:</td><td>�����p���b�g�w�� (�ȗ��\)</td></tr></table></blockquote></blockquote><blockquote><blockquote>(��)&nbsp; m10:pic00fm.bmp,0,0,0</blockquote><u><font size=+1>���</font></u><blockquote>�}�X�N�摜�f�[�^���w�肵�܂��B<br>M�R�}���h�̋L�q���ɐ����͂���܂���B<p>�~�j�b�c�}�X�R�b�g�ň�����}�X�N�摜�t�H�[�}�b�g�́A1,2,4,8bit/pixel(1�F,4�F,16�F,256�F)��BMP�摜�ł��B<p>num�́A#�R�}���h�Ŏg�p����ԍ��ł��B�}�X�N�摜�t�@�C�����ƂɌŗL�Ɏw�肵�܂��B<p>filename�́A�摜�̃t�@�C�������w�肵�܂��B<p>x_pos�Ay_pos�́AD�R�}���h�Ŏw�肵���A�j���[�V�����S�̗̂̈�̍�����W�����_�Ƃ����Ƃ��́A�摜�̕\�����W���w�肵�܂��B(G�R�}���h�Ɠ���)<br>transparent_palette�́A�����p���b�g���w�肵�܂��B<blockquote><img SRC="pic00f.gif" height=64 width=64></blockquote>��}�̃t�L�_�V�̉摜���A�܂��̐������𓧖��ɂ��ĕ\���������ꍇ�A�ȉ��̃}�X�N�摜�t�@�C����p�ӂ��܂��B<blockquote><img SRC="pic00fm.gif" height=64 width=64></blockquote>���̃}�X�N�摜�ł́A�t�L�_�V�摜�̐������𔒂ɁA����ȊO�i�\�������������j�����ɂ��Ă��܂��B���̕����̓p���b�g�ԍ�0�ł��̂ŁAtransparent_palette=0�ƂȂ�܂��B</blockquote></blockquote></body></html>
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta name="Content-Type" content="text/html; charset=UTF-8">
+   <meta name="GENERATOR" content="Mozilla/4.73 (Macintosh; U; PPC) [Netscape]">
+   <title>ミニッツマスコット :  M コマンド</title>
+   <link rel="icon" href="../favicon.ico" />
+</head>
+<body text="#000000" bgcolor="#FFBF56" link="#0000FF" vlink="#551A8B" alink="#0000FF">
+<b><i><font size=+3>M</font></i></b>コマンド
+<blockquote><font size=+1><u>書式</u>：　<b><i>Mnum,filename,x_pos,y_pos[,transparent_palette]</i></b></font>
+<blockquote>&nbsp;
+<table>
+<tr>
+<td>num</td>
+
+<td>:</td>
+
+<td>マスク画像データの番号 (#コマンドで使用)</td>
+</tr>
+
+<tr>
+<td>filename</td>
+
+<td>:</td>
+
+<td>マスク画像データのファイル名</td>
+</tr>
+
+<tr>
+<td>x_pos</td>
+
+<td>:</td>
+
+<td>アニメーション全体の領域からのX座標</td>
+</tr>
+
+<tr>
+<td>y_pos</td>
+
+<td>:</td>
+
+<td>アニメーション全体の領域からのY座標</td>
+</tr>
+
+<tr>
+<td>transparent_palette</td>
+
+<td>:</td>
+
+<td>透明パレット指定 (省略可能)</td>
+</tr>
+</table>
+</blockquote>
+</blockquote>
+
+<blockquote>
+<blockquote>(例)&nbsp; m10:pic00fm.bmp,0,0,0</blockquote>
+<u><font size=+1>解説</font></u>
+<blockquote>マスク画像データを指定します。
+<br>Mコマンドの記述数に制限はありません。
+<p>ミニッツマスコットで扱えるマスク画像フォーマットは、1,2,4,8bit/pixel
+(1色,4色,16色,256色)のBMP画像です。
+<p>numは、#コマンドで使用する番号です。マスク画像ファイルごとに固有に指定します。
+<p>filenameは、画像のファイル名を指定します。
+<p>x_pos、y_posは、Dコマンドで指定したアニメーション全体の領域の左上座標を原点としたときの、画像の表示座標を指定します。(Gコマンドと同じ)
+<br>transparent_paletteは、透明パレットを指定します。
+<blockquote><img SRC="pic00f.gif" height=64 width=64></blockquote>
+上図のフキダシの画像を、まわりの青い部分を透明にして表示したい場合、以下のマスク画像ファイルを用意します。
+<blockquote><img SRC="pic00fm.gif" height=64 width=64></blockquote>
+このマスク画像では、フキダシ画像の青い部分を白に、それ以外（表示したい部分）を黒にしています。白の部分はパレット番号0ですので、transparent_palette=0となります。</blockquote>
+</blockquote>
+
+</body>
+</html>

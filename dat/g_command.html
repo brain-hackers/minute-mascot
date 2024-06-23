@@ -1,1 +1,79 @@
-<!doctype html public "-//w3c//dtd html 4.0 transitional//en"><html><head>   <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">   <meta name="GENERATOR" content="Mozilla/4.73 (Macintosh; U; PPC) [Netscape]">   <meta name="Content-Type" content="text/html; charset=Shift_JIS">   <title>�~�j�b�c�}�X�R�b�g :  G �R�}���h</title></head><body text="#000000" bgcolor="#FFBF56" link="#0000FF" vlink="#551A8B" alink="#0000FF"><b><i><font size=+3>G</font></i></b>�R�}���h<blockquote><font size=+1><u>����</u>�F�@<b><i>Gnum,filename,x_pos,y_pos[,transparent_palette]</i></b></font><blockquote>&nbsp;<table><tr><td>num</td><td>:</td><td>�摜�f�[�^�̔ԍ� (#�R�}���h�Ŏg�p)</td></tr><tr><td>filename</td><td>:</td><td>�摜�f�[�^�̃t�@�C����</td></tr><tr><td>x_pos</td><td>:</td><td>�A�j���[�V�����S�̗̂̈悩���X���W</td></tr><tr><td>y_pos</td><td>:</td><td>�A�j���[�V�����S�̗̂̈悩���Y���W</td></tr><tr><td>transparent_palette</td><td>:</td><td>�����p���b�g�w�� (�ȗ��\)</td></tr></table><p>(��)&nbsp; g0:pic00.bmp,64,30,11</blockquote><u><font size=+1>���</font></u></blockquote><blockquote><blockquote>�摜�f�[�^���w�肵�܂��B<br>G�R�}���h�̋L�q���ɐ����͂���܂���B<p>�~�j�b�c�}�X�R�b�g�ň�����摜�t�H�[�}�b�g�́A1,2,4,8,24bit/pixel (1�F,4�F,16�F,256�F,24�r�b�g�t���J���[)��BMP�摜�ł��B<p>num�́A#�R�}���h�Ŏg�p����ԍ��ł��B�摜�t�@�C�����ƂɌŗL�Ɏw�肵�܂��B<p>filename�́A�摜�̃t�@�C�������w�肵�܂��B<p>x_pos�Ay_pos�́AD�R�}���h�Ŏw�肵���A�j���[�V�����S�̗̂̈�̍�����W�����_�Ƃ����Ƃ��́A�摜�̕\�����W���w�肵�܂��B���}�ł́Ax_pos=64�Ay_pos=30�ł��B<blockquote><img SRC="g_command_1.gif" height=243 width=329></blockquote></blockquote></blockquote><blockquote><blockquote>transparent_palette�́A�����p���b�g���w�肵�܂��B<blockquote><img SRC="pic00.gif" height=160 width=64>�@</blockquote>���̉摜���A�l���̎���𓧖��ɂ��ĕ\������ꍇ�A���̐F�̉摜�̃p���b�g�ԍ���transparent_palette�ɋL�q���܂��B���̏ꍇ��16�FBMP�摜��11�Ԗڂ̃p���b�g�Ȃ̂ŁAtranparent_palette=11�ƂȂ�܂��B<br>�������A24bit/pixel�̉摜�̏ꍇ�́Atransparent_palette���w�肷�邱�Ƃ͏o���܂���B<p>�����w��́AM�R�}���h���g�p���邱�Ƃł��\�ł��B</blockquote></blockquote></body></html>
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta name="GENERATOR" content="Mozilla/4.73 (Macintosh; U; PPC) [Netscape]">
+   <meta name="Content-Type" content="text/html; charset=UTF-8">
+   <title>ミニッツマスコット :  G コマンド</title>
+   <link rel="icon" href="../favicon.ico" />
+</head>
+<body text="#000000" bgcolor="#FFBF56" link="#0000FF" vlink="#551A8B" alink="#0000FF">
+<b><i><font size=+3>G</font></i></b>コマンド
+<blockquote><font size=+1><u>書式</u>：　<b><i>Gnum,filename,x_pos,y_pos[,transparent_palette]</i></b></font>
+<blockquote>&nbsp;
+<table>
+<tr>
+<td>num</td>
+
+<td>:</td>
+
+<td>画像データの番号 (#コマンドで使用)</td>
+</tr>
+
+<tr>
+<td>filename</td>
+
+<td>:</td>
+
+<td>画像データのファイル名</td>
+</tr>
+
+<tr>
+<td>x_pos</td>
+
+<td>:</td>
+
+<td>アニメーション全体の領域からのX座標</td>
+</tr>
+
+<tr>
+<td>y_pos</td>
+
+<td>:</td>
+
+<td>アニメーション全体の領域からのY座標</td>
+</tr>
+
+<tr>
+<td>transparent_palette</td>
+
+<td>:</td>
+
+<td>透明パレット指定 (省略可能)</td>
+</tr>
+</table>
+
+<p>(例)&nbsp; g0:pic00.bmp,64,30,11</blockquote>
+<u><font size=+1>解説</font></u></blockquote>
+
+<blockquote>
+<blockquote>画像データを指定します。
+<br>Gコマンドの記述数に制限はありません。
+<p>ミニッツマスコットで扱える画像フォーマットは、1,2,4,8,24bit/pixel (1色,4色,16色,256色,24ビットフルカラー)のBMP画像です。
+<p>numは、#コマンドで使用する番号です。画像ファイルごとに固有に指定します。
+<p>filenameは、画像のファイル名を指定します。
+<p>x_pos、y_posは、Dコマンドで指定したアニメーション全体の領域の左上座標を原点としたときの、画像の表示座標を指定します。下図では、x_pos=64、y_pos=30です。
+<blockquote><img SRC="g_command_1.gif" height=243 width=329></blockquote>
+</blockquote>
+</blockquote>
+
+<blockquote>
+<blockquote>transparent_paletteは、透明パレットを指定します。
+<blockquote><img SRC="pic00.gif" height=160 width=64>　</blockquote>
+この画像を、人物の周りを透明にして表示する場合、その色の画像のパレット番号をtransparent_paletteに記述します。この場合は16色BMP画像の11番目のパレットなので、tranparent_palette=11となります。
+<br>ただし、24bit/pixelの画像の場合は、transparent_paletteを指定することは出来ません。
+<p>透明指定は、Mコマンドを使用することでも可能です。</blockquote>
+</blockquote>
+
+</body>
+</html>
